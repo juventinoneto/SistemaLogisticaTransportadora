@@ -1,0 +1,14 @@
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\bin\Debug\netcoreapp2.2\Cargo.DomainService.deps.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\bin\Debug\netcoreapp2.2\Cargo.DomainService.runtimeconfig.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\bin\Debug\netcoreapp2.2\Cargo.DomainService.runtimeconfig.dev.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\bin\Debug\netcoreapp2.2\Cargo.DomainService.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\bin\Debug\netcoreapp2.2\Cargo.DomainService.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\bin\Debug\netcoreapp2.2\Cargo.DomainModel.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\bin\Debug\netcoreapp2.2\Cargo.DomainModel.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\obj\Debug\netcoreapp2.2\Cargo.DomainService.csprojAssemblyReference.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\obj\Debug\netcoreapp2.2\Cargo.DomainService.csproj.CoreCompileInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\obj\Debug\netcoreapp2.2\Cargo.DomainService.AssemblyInfoInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\obj\Debug\netcoreapp2.2\Cargo.DomainService.AssemblyInfo.cs
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\obj\Debug\netcoreapp2.2\Cargo.DomainService.csproj.CopyComplete
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\obj\Debug\netcoreapp2.2\Cargo.DomainService.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainService\obj\Debug\netcoreapp2.2\Cargo.DomainService.pdb
