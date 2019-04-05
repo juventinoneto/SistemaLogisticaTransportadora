@@ -1,0 +1,14 @@
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.UnitTests\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.UnitTests\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.UnitTests\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.deps.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.runtimeconfig.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.runtimeconfig.dev.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.AssemblyInfoInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.AssemblyInfo.cs
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.UnitTests\Debug\netcoreapp2.2\Cargo.UnitTests.pdb

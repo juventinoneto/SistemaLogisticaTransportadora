@@ -3,9 +3,9 @@ C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\bin\Debug\netcoreapp2.2\Cargo.DomainModel.runtimeconfig.dev.json
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\bin\Debug\netcoreapp2.2\Cargo.DomainModel.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\bin\Debug\netcoreapp2.2\Cargo.DomainModel.pdb
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\obj\Debug\netcoreapp2.2\Cargo.DomainModel.csprojAssemblyReference.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\obj\Debug\netcoreapp2.2\Cargo.DomainModel.csproj.CoreCompileInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\obj\Debug\netcoreapp2.2\Cargo.DomainModel.AssemblyInfoInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\obj\Debug\netcoreapp2.2\Cargo.DomainModel.AssemblyInfo.cs
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\obj\Debug\netcoreapp2.2\Cargo.DomainModel.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\obj\Debug\netcoreapp2.2\Cargo.DomainModel.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.DomainModel\obj\Debug\netcoreapp2.2\Cargo.DomainModel.csprojAssemblyReference.cache

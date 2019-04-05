@@ -1,0 +1,11 @@
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.deps.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.runtimeconfig.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.runtimeconfig.dev.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.csprojResolveAssemblyReference.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.csproj.CoreCompileInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.AssemblyInfoInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.AssemblyInfo.cs
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.ApplicationService\Debug\netcoreapp2.2\Cargo.ApplicationService.pdb

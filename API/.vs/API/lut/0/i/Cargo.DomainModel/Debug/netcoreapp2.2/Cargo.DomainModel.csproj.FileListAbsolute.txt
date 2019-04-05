@@ -1,0 +1,10 @@
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.deps.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.runtimeconfig.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.runtimeconfig.dev.json
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\b\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.csproj.CoreCompileInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.AssemblyInfoInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.AssemblyInfo.cs
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\.vs\API\lut\0\i\Cargo.DomainModel\Debug\netcoreapp2.2\Cargo.DomainModel.pdb

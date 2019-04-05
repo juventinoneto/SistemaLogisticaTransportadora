@@ -3,9 +3,9 @@ C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\bin\Debug\netcoreapp2.2\Cargo.Repository.runtimeconfig.dev.json
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\bin\Debug\netcoreapp2.2\Cargo.Repository.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\bin\Debug\netcoreapp2.2\Cargo.Repository.pdb
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.csprojAssemblyReference.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.csproj.CoreCompileInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.AssemblyInfoInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.AssemblyInfo.cs
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.csprojAssemblyReference.cache
