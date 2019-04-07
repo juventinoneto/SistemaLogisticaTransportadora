@@ -1,5 +1,6 @@
 using Cargo.DomainModel.Models.Commons;
 using Cargo.DomainModel.Models.ControleColetaDefinicaoCarga;
+using Cargo.DomainModel.Models.ControleExpedicao;
 using Cargo.Infrastructure.Model;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +19,10 @@ namespace Cargo.Infrastructure
 
         DbSet<Coleta> Coleta { get; set; }
 
+        DbSet<Expedicao> Expedicao { get; set; }
+
+        DbSet<ExpedicaoColeta> ExpedicaoColeta { get; set; }
+
         public CargoContexto(DbContextOptions<CargoContexto> options)
             : base(options) { }
 
@@ -29,6 +34,9 @@ namespace Cargo.Infrastructure
             modelBuilder.ApplyConfiguration(new ParceiroMap());
             modelBuilder.ApplyConfiguration(new ClienteMap());
             modelBuilder.ApplyConfiguration(new ColetaMap());
+
+            modelBuilder.ApplyConfiguration(new ExpedicaoMap());
+            modelBuilder.ApplyConfiguration(new ExpedicaoColetaMap());
         }
 
     }
