@@ -15,7 +15,7 @@ namespace Cargo.Infrastructure.Model
             builder.Property(p => p.Status)
                 .HasConversion(
                     v => v.ToString(),
-                    v => (Status)Enum.Parse(typeof(Status), v));
+                    v => (StatusExpedicao.Status)Enum.Parse(typeof(StatusExpedicao.Status), v));
         }
     }
 }

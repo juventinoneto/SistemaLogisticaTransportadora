@@ -14,7 +14,7 @@ namespace Cargo.DomainModel.Models.ControleExpedicao
 
         public DateTime Data { get; set; }
 
-        public Status Status { get; set; }
+        public StatusExpedicao.Status Status { get; set; }
 
         public List<ExpedicaoColeta> ExpedicoesColetas { get; set; }
 

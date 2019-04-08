@@ -1,8 +1,8 @@
 namespace Cargo.DomainModel.Models.Commons
 {
-    public class Status
+    public class StatusExpedicao
     {
-        public enum StatusExpedicao 
+        public enum Status 
         {
             P,
             T,
