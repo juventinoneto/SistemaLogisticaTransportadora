@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\Cargo.Infrastructure\Cargo.Infrastructure.csproj" />
+    <ProjectReference Include="..\Cargo.DomainModel\Cargo.DomainModel.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>

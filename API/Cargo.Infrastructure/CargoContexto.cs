@@ -10,23 +10,23 @@ namespace Cargo.Infrastructure
 {
     public class CargoContexto : DbContext
     {
-        DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
 
-        DbSet<Endereco> Endereco { get; set; }
+        public DbSet<Endereco> Endereco { get; set; }
 
-        DbSet<Parceiro> Parceiro { get; set; }        
+        public DbSet<Parceiro> Parceiro { get; set; }        
 
-        DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
 
-        DbSet<Coleta> Coleta { get; set; }
+        public DbSet<Coleta> Coleta { get; set; }
 
-        DbSet<Expedicao> Expedicao { get; set; }
+        public DbSet<Expedicao> Expedicao { get; set; }
 
-        DbSet<ExpedicaoColeta> ExpedicaoColeta { get; set; }
+        public DbSet<ExpedicaoColeta> ExpedicaoColeta { get; set; }
 
-        DbSet<Tarifa> Tarifa { get; set; }
+        public DbSet<Tarifa> Tarifa { get; set; }
 
-        DbSet<SimulacaoTarifa> SimulacaoTarifa { get; set; }
+        public DbSet<SimulacaoTarifa> SimulacaoTarifa { get; set; }
 
         public CargoContexto(DbContextOptions<CargoContexto> options)
             : base(options) { }

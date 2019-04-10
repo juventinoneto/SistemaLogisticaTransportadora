@@ -12,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using Cargo.Infrastructure;
+using Cargo.Repository.Classes.ControleColetaDefinicaoCarga;
+using Cargo.Repository.Interfaces.ControleColetaDefinicaoCarga;
 
 namespace WebAPI
 {
@@ -31,6 +33,10 @@ namespace WebAPI
                 options.UseSqlServer(Configuration["Data:CargoDB:ConnectionString"]));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddScoped<IClienteRepository, ClienteRepository>();
+            services.AddScoped<IColetaRepository, ColetaRepository>();
+            services.AddScoped<IParceiroRepository, ParceiroRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

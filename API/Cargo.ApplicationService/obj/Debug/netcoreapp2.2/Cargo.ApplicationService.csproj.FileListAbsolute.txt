@@ -14,3 +14,5 @@ C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Application
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.pdb
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.csprojAssemblyReference.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.csproj.CopyComplete
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\bin\Debug\netcoreapp2.2\Cargo.Infrastructure.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\bin\Debug\netcoreapp2.2\Cargo.Infrastructure.pdb

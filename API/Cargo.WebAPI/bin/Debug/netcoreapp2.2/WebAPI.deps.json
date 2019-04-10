@@ -385,6 +385,10 @@
         }
       },
       "Cargo.Repository/1.0.0": {
+        "dependencies": {
+          "Cargo.DomainModel": "1.0.0",
+          "Cargo.Infrastructure": "1.0.0"
+        },
         "runtime": {
           "Cargo.Repository.dll": {}
         },

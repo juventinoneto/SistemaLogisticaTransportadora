@@ -21,3 +21,5 @@ C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.UnitTests\o
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.UnitTests\obj\Debug\netcoreapp2.2\Cargo.UnitTests.pdb
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.UnitTests\obj\Debug\netcoreapp2.2\Cargo.UnitTests.csprojAssemblyReference.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.UnitTests\obj\Debug\netcoreapp2.2\Cargo.UnitTests.csproj.CopyComplete
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.UnitTests\bin\Debug\netcoreapp2.2\Cargo.Infrastructure.dll
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.UnitTests\bin\Debug\netcoreapp2.2\Cargo.Infrastructure.pdb
