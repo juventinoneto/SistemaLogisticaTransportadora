@@ -4,6 +4,5 @@ namespace Cargo.Repository.Interfaces.ControleColetaDefinicaoCarga
 {
     public interface IClienteRepository : IRepository<Cliente>
     {
-         
     }
 }

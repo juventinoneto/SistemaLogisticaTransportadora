@@ -691,6 +691,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\juven\\Projetos\\TCC\\SistemaLogisticaTransportadora\\API\\Cargo.DomainModel\\Cargo.DomainModel.csproj",
       "projectName": "Cargo.DomainModel",

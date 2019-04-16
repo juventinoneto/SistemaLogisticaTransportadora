@@ -14,6 +14,9 @@ using Microsoft.EntityFrameworkCore;
 using Cargo.Infrastructure;
 using Cargo.Repository.Classes.ControleColetaDefinicaoCarga;
 using Cargo.Repository.Interfaces.ControleColetaDefinicaoCarga;
+using Cargo.ApplicationService.Interfaces.ControleColetaDefinicaoCarga;
+using Cargo.ApplicationService.Classe.ControleColetaDefinicaoCarga;
+using AutoMapper;
 
 namespace WebAPI
 {
@@ -31,10 +34,18 @@ namespace WebAPI
         {
             services.AddDbContext<CargoContexto>(options => 
                 options.UseSqlServer(Configuration["Data:CargoDB:ConnectionString"]));
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddSwaggerGen(swagger =>
+	        {
+		        swagger.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "Cargo API" });
+	        });
+            
+            services.AddAutoMapper();
+            
+            services.AddScoped<IClienteAppService, ClienteAppService>();
             services.AddScoped<IClienteRepository, ClienteRepository>();
+            services.AddScoped<IColetaAppService, ColetaAppService>();
             services.AddScoped<IColetaRepository, ColetaRepository>();
             services.AddScoped<IParceiroRepository, ParceiroRepository>();
         }
@@ -51,6 +62,12 @@ namespace WebAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseSwagger();
+	        app.UseSwaggerUI(c =>
+	        {
+		        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cargo API");
+	        });
 
             app.UseHttpsRedirection();
             app.UseMvc();

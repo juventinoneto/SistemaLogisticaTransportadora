@@ -9,5 +9,6 @@ namespace Cargo.Repository.Classes.ControleColetaDefinicaoCarga
         public ClienteRepository(CargoContexto context) : base(context)
         {
         }
+               
     }
 }

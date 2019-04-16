@@ -55,7 +55,7 @@ namespace Cargo.Repository.Classes
         //         .FirstOrDefault(e => e. == id);
         // }
 
-        public TEntity Update(int id, TEntity entity)
+        public TEntity Update( TEntity entity)
         {
             _context.Set<TEntity>().Update(entity);
             _context.SaveChanges();

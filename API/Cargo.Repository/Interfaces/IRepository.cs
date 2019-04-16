@@ -12,7 +12,7 @@ namespace Cargo.Repository.Interfaces
 
         TEntity Create(TEntity entity);
 
-        TEntity Update(int id, TEntity entity);
+        TEntity Update(TEntity entity);
 
         // TEntity Delete(int id);
 
