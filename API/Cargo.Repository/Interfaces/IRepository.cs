@@ -17,5 +17,7 @@ namespace Cargo.Repository.Interfaces
         // TEntity Delete(int id);
 
         TEntity Delete(TEntity entity);
+
+        IEnumerable<TEntity> CreateList(IEnumerable<TEntity> entities);
     }
 }

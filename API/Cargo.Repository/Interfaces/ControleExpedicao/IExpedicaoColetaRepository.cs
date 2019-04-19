@@ -1,9 +1,9 @@
 using Cargo.DomainModel.Models.ControleExpedicao;
+using System.Collections.Generic;
 
 namespace Cargo.Repository.Interfaces.ControleExpedicao
 {
-    public interface IExpedicaoColeta : IRepository<ExpedicaoColeta>
+    public interface IExpedicaoColetaRepository : IRepository<ExpedicaoColeta>
     {
-         
     }
 }

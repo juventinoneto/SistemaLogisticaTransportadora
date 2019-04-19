@@ -17,6 +17,10 @@ using Cargo.Repository.Interfaces.ControleColetaDefinicaoCarga;
 using Cargo.ApplicationService.Interfaces.ControleColetaDefinicaoCarga;
 using Cargo.ApplicationService.Classe.ControleColetaDefinicaoCarga;
 using AutoMapper;
+using Cargo.ApplicationService.Classe.ControleExpedicao;
+using Cargo.ApplicationService.Interfaces.ControleExpedicao;
+using Cargo.Repository.Classes.ControleExpedicao;
+using Cargo.Repository.Interfaces.ControleExpedicao;
 
 namespace WebAPI
 {
@@ -48,6 +52,8 @@ namespace WebAPI
             services.AddScoped<IColetaAppService, ColetaAppService>();
             services.AddScoped<IColetaRepository, ColetaRepository>();
             services.AddScoped<IParceiroRepository, ParceiroRepository>();
+            services.AddScoped<IExpedicaoAppService, ExpedicaoAppService>();
+            services.AddScoped<IExpedicaoRepository, ExpedicaoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

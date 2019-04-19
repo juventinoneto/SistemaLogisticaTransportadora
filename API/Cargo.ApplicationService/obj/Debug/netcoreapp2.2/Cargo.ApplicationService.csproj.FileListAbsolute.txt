@@ -1,7 +1,3 @@
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.csprojResolveAssemblyReference.cache
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.csproj.CoreCompileInputs.cache
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.AssemblyInfoInputs.cache
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.AssemblyInfo.cs
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\bin\Debug\netcoreapp2.2\Cargo.ApplicationService.deps.json
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\bin\Debug\netcoreapp2.2\Cargo.ApplicationService.runtimeconfig.json
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\bin\Debug\netcoreapp2.2\Cargo.ApplicationService.runtimeconfig.dev.json
@@ -13,5 +9,9 @@ C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Application
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\bin\Debug\netcoreapp2.2\Cargo.DomainModel.pdb
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\bin\Debug\netcoreapp2.2\Cargo.Repository.pdb
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\bin\Debug\netcoreapp2.2\Cargo.Infrastructure.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.csprojResolveAssemblyReference.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.csproj.CoreCompileInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.AssemblyInfoInputs.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.AssemblyInfo.cs
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.ApplicationService\obj\Debug\netcoreapp2.2\Cargo.ApplicationService.pdb

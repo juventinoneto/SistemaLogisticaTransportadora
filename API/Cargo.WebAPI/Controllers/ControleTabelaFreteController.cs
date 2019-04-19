@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Cargo.ApplicationService.Classe.ControleTabelaFrete;
+using Cargo.ApplicationService.DTO.Commons;
+using Cargo.ApplicationService.DTO.ControleTabelaFrete;
 using Cargo.ApplicationService.Interfaces.ControleColetaDefinicaoCarga;
+using Cargo.ApplicationService.Interfaces.ControleTabelaFrete;
+using Cargo.DomainModel.Models.ControleTabelaFrete;
 using Cargo.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,22 +22,70 @@ namespace WebAPI.Controllers
 
         private readonly IMapper _mapper;
 
-        private readonly IClienteAppService _clienteService;
+        private readonly ITarifaAppService _tarifaService;
+
         public ControleTabelaFreteController(
             CargoContexto context,
             IMapper mapper,
-            IClienteAppService clienteService)
+            ITarifaAppService tarifaService)
         {
             _context = context;
             _mapper = mapper;
-            _clienteService = clienteService;
+            _tarifaService = tarifaService;
         }
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpPut]
+        [Route("simulacao-tarifa")]
+        public ActionResult<ResultBase> Post([FromBody] RegistrarTarifaCommand request)
         {
-            return null;
+            try
+            {
+                var mapped = _mapper.Map<Tarifa>(request);
 
+                var result = _tarifaService.CriarTarifa(mapped);
+
+                return new ResultBase(true, _mapper.Map<TarifaData>(result));
+            }
+            catch (System.Exception ex)
+            {
+                return new ResultBase(false, request, ex.Message);
+            }
         }
+
+        [HttpPut]
+        [Route("simulacao-tarifa/{id}")]
+        public ActionResult<ResultBase> Put(int idTarifa, [FromBody] RegistrarSimulacaoTarifaCommand request)
+        {
+            try
+            {
+                var mapped = _mapper.Map<SimulacaoTarifa>(request);
+
+                var result = _tarifaService.RegistrarSimulacao(idTarifa, mapped);
+
+                return new ResultBase(true, result);
+            }
+            catch (System.Exception ex)
+            {
+                return new ResultBase(false, request, ex.Message);
+            }
+        }
+
+        //[HttpGet]
+        //[Route("{id}")]
+        //public ActionResult<ResultBase> Post([FromBody] SolicitarColetaCommand coleta)
+        //{
+        //    try
+        //    {
+        //        var coletaMapped = _mapper.Map<Coleta>(coleta);
+
+        //        var result = _coletaService.RegistrarColeta(coletaMapped);
+
+        //        return new ResultBase(true, coleta);
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        return new ResultBase(false, coleta, ex.Message);
+        //    }
+        //}
     }
 }

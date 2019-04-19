@@ -55,11 +55,19 @@ namespace Cargo.Repository.Classes
         //         .FirstOrDefault(e => e. == id);
         // }
 
-        public TEntity Update( TEntity entity)
+        public TEntity Update(TEntity entity)
         {
             _context.Set<TEntity>().Update(entity);
             _context.SaveChanges();
             return entity;
+        }
+
+        public IEnumerable<TEntity> CreateList(IEnumerable<TEntity> entities)
+        {
+            _context.Set<TEntity>().AddRange(entities);
+            _context.SaveChanges();
+            return entities;
+                
         }
     }
 }

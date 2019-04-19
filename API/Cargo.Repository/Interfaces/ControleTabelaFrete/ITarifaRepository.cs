@@ -4,6 +4,6 @@ namespace Cargo.Repository.Interfaces.ControleTabelaFrete
 {
     public interface ITarifaRepository : IRepository<Tarifa>
     {
-         
+        Tarifa GetById(int idTarifa);
     }
 }

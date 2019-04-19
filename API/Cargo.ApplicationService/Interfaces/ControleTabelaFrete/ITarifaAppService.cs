@@ -4,6 +4,7 @@ namespace Cargo.ApplicationService.Interfaces.ControleTabelaFrete
 {
     public interface ITarifaAppService : IAppService<Tarifa>
     {
-         
+        Tarifa CriarTarifa(Tarifa tarifa);
+        Tarifa RegistrarSimulacao(int idTarifa, SimulacaoTarifa simulacao);
     }
 }
