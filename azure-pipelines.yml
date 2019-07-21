@@ -17,9 +17,10 @@ variables:
 
 steps:
 - task: NuGetToolInstaller@1
+
 - script: dotnet restore ./SistemaLogisticaTransportadora/API/API.sln
-displayName: Restore
-workingDirectory: $(workingDirectory)
+# displayName: Restore
+# workingDirectory: $(workingDirectory)
 
 - task: NuGetCommand@2
   inputs:
