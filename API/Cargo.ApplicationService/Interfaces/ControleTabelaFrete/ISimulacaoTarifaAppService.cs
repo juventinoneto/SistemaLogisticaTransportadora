@@ -6,5 +6,6 @@ namespace Cargo.ApplicationService.Classe.ControleTabelaFrete
 {
     public interface ISimulacaoTarifaAppService : IAppService<SimulacaoTarifa>
     {
+        SimulacaoTarifa RedefinirSimulacao(SimulacaoTarifa simulacaoTarifa);
     }
 }

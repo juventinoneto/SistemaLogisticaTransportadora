@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Cargo.ApplicationService.DTO.Commons;
 using Cargo.ApplicationService.Interfaces.ControleColetaDefinicaoCarga;
 using Cargo.ApplicationService.Interfaces.ControleExpedicao;
 using Cargo.DomainModel.Models.ControleColetaDefinicaoCarga;
@@ -20,6 +21,11 @@ namespace Cargo.ApplicationService.Classe.ControleExpedicao
             ) : base(repository)
         {
             _coletaAppService = coletaAppService;
+        }
+
+        public ResultBase DefinirExpedicao(IEnumerable<int> idsColetas, DateTime data)
+        {
+            throw new NotImplementedException();
         }
 
         public IEnumerable<Coleta> GetExpedicoesDiarias()

@@ -8,6 +8,7 @@ namespace Cargo.Repository.Classes.ControleExpedicao
     {
         public ExpedicaoRepository(CargoContexto context) : base(context)
         {
+            
         }
     }
 }

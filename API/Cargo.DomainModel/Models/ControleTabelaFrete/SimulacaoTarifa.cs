@@ -21,5 +21,20 @@ namespace Cargo.DomainModel.Models.ControleTabelaFrete
 
         [ForeignKey("IdSimulacao")]
         public Tarifa Tarifa { get; set; }
+
+        public SimulacaoTarifa RedefinirTarifa(SimulacaoTarifa simulacao) 
+        {
+            this.Data = simulacao.Data;
+            this.Valor = simulacao.Valor;
+            
+            return this;
+        }
+
+        // public SimulacaoTarifa DefinirValor(string origem, string destino)
+        // {
+
+
+        //     return this;
+        // }
     }
 }

@@ -1,4 +1,5 @@
 using Cargo.ApplicationService.Interfaces.ControleTabelaFrete;
+using Cargo.ApplicationService.Util;
 using Cargo.DomainModel.Models.Commons;
 using Cargo.DomainModel.Models.ControleTabelaFrete;
 using Cargo.Repository.Interfaces;
@@ -25,8 +26,23 @@ namespace Cargo.ApplicationService.Classe.ControleTabelaFrete
 
         public Tarifa CriarTarifa(Tarifa tarifa)
         {
+
             var tarifaRegistrada = base.Create(tarifa);
             return tarifaRegistrada;
+        }
+
+        public Tarifa ReajustarTarifa(int idTarifa, SimulacaoTarifa tarifa)
+        {
+            var tarifaEncontrada = _repository.GetById(idTarifa);
+            var simulacao = tarifaEncontrada.Simulacoes
+                .Where(x => x.StatusSimulacaoTarifa.Equals(StatusSimulacaoTarifa.Status.C))
+                .FirstOrDefault();
+
+            simulacao.RedefinirTarifa(tarifa);
+
+            _simulacaoAppService.RedefinirSimulacao(simulacao);
+
+            return tarifaEncontrada;
         }
 
         public Tarifa RegistrarSimulacao(int idTarifa, SimulacaoTarifa simulacao)
@@ -38,8 +54,14 @@ namespace Cargo.ApplicationService.Classe.ControleTabelaFrete
                 s.StatusSimulacaoTarifa = StatusSimulacaoTarifa.Status.P;
             });
 
-            simulacao.StatusSimulacaoTarifa = StatusSimulacaoTarifa.Status.C;
+            Preco preco = new Preco();
+            var origem = tarifa.Coleta.Cliente.Endereco.Uf;
+            var destino = tarifa.Coleta.Endereco.Uf;
+            var valor = preco.Precos[origem];
+
+            simulacao.StatusSimulacaoTarifa = StatusSimulacaoTarifa.Status.P;
             simulacao.Data = new DateTime();
+            simulacao.Valor = valor.Find(x => x.Sigla.Equals(destino)).Valor;
 
             tarifa.Simulacoes.Add(simulacao);
 

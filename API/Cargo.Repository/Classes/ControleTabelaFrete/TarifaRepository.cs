@@ -20,8 +20,7 @@ namespace Cargo.Repository.Classes.ControleTabelaFrete
                 .Tarifa
                 .Include(x => x.Simulacoes)
                 .Where(x => x.IdTarifa == idTarifa)
-                .First();
-                
+                .FirstOrDefault();                
         }
     }
 }

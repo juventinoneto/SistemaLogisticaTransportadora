@@ -6,5 +6,6 @@ namespace Cargo.ApplicationService.Interfaces.ControleTabelaFrete
     {
         Tarifa CriarTarifa(Tarifa tarifa);
         Tarifa RegistrarSimulacao(int idTarifa, SimulacaoTarifa simulacao);
+        Tarifa ReajustarTarifa(int idTarifa, SimulacaoTarifa tarifa);
     }
 }
