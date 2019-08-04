@@ -20,8 +20,7 @@ namespace Cargo.ApplicationService.DTO
 
             CreateMap<ColetaData, Coleta>().ReverseMap();
 
-            CreateMap<ColetaData, Coleta>().ReverseMap();
-            CreateMap<RegistrarExpedicaoColetaCommand, ExpedicaoColeta>();
+            CreateMap<ColetaData, Coleta>().ReverseMap();   
 
             CreateMap<SolicitarColetaClienteCommand, Cliente>().ReverseMap();
             CreateMap<SolicitarColetaParceiroCommand, Parceiro>().ReverseMap();

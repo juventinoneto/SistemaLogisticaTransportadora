@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Cargo.DomainModel.Models.Commons;
+using Cargo.DomainModel.Models.ControleColetaDefinicaoCarga;
 
 namespace Cargo.DomainModel.Models.ControleExpedicao
 {
@@ -16,11 +17,11 @@ namespace Cargo.DomainModel.Models.ControleExpedicao
 
         public StatusExpedicao.Status Status { get; set; }
 
-        public List<ExpedicaoColeta> ExpedicoesColetas { get; set; }
+        public List<Coleta> Coletas { get; set; }
 
         public Expedicao() 
         {
-            this.ExpedicoesColetas = new List<ExpedicaoColeta>();
+            this.Coletas = new List<Coleta>();
         }
     }
 }

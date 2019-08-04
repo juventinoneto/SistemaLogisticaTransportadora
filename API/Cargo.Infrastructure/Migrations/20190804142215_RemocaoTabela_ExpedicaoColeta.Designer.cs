@@ -4,14 +4,16 @@ using Cargo.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Cargo.Infrastructure.Migrations
 {
     [DbContext(typeof(CargoContexto))]
-    partial class CargoContextoModelSnapshot : ModelSnapshot
+    [Migration("20190804142215_RemocaoTabela_ExpedicaoColeta")]
+    partial class RemocaoTabela_ExpedicaoColeta
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

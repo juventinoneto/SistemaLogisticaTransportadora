@@ -22,8 +22,6 @@ namespace Cargo.Infrastructure
 
         public DbSet<Expedicao> Expedicao { get; set; }
 
-        public DbSet<ExpedicaoColeta> ExpedicaoColeta { get; set; }
-
         public DbSet<Tarifa> Tarifa { get; set; }
 
         public DbSet<SimulacaoTarifa> SimulacaoTarifa { get; set; }
@@ -41,7 +39,6 @@ namespace Cargo.Infrastructure
             modelBuilder.ApplyConfiguration(new ColetaMap());
 
             modelBuilder.ApplyConfiguration(new ExpedicaoMap());
-            modelBuilder.ApplyConfiguration(new ExpedicaoColetaMap());
 
             modelBuilder.ApplyConfiguration(new TarifaMap());
             modelBuilder.ApplyConfiguration(new SimulacaoTarifaMap());

@@ -23,9 +23,6 @@ namespace Cargo.WebAPI.Controllers
         private readonly IClienteAppService _clienteService;
 
         private readonly IExpedicaoAppService _expedicaoService;
-
-        private readonly IExpedicaoColetaAppService _expedicaoColetaAppService;
-
         public ControleExpedicaoController(
             CargoContexto context,
             IMapper mapper,
@@ -57,13 +54,14 @@ namespace Cargo.WebAPI.Controllers
 
         [HttpPost]
         [Route("agendamento-expedicao")]
-        public ActionResult<ResultBase> PostAgendamentoExpedicao([FromBody] IEnumerable<RegistrarExpedicaoColetaCommand> request)
+        public ActionResult<ResultBase> PostAgendamentoExpedicao([FromBody] IEnumerable<RegistrarExpedicaoCommand> request)
         {
             try
             {
-                var mapped = _mapper.Map<List<RegistrarExpedicaoColetaCommand>, List<ExpedicaoColeta>>(request.ToList());
+                // alterar, pois não está correto
+                var mapped = _mapper.Map<List<RegistrarExpedicaoCommand>, List<Expedicao>>(request.ToList());
 
-                var result = _expedicaoColetaAppService.RegistrarExpedicao(mapped);
+                ResultBase result = null;
 
                 return new ResultBase(true, result);
             }

@@ -7,10 +7,10 @@ C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\bin\Debug\netcoreapp2.2\Cargo.Infrastructure.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\bin\Debug\netcoreapp2.2\Cargo.Infrastructure.pdb
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\bin\Debug\netcoreapp2.2\Cargo.DomainModel.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.csprojAssemblyReference.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.csproj.CoreCompileInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.AssemblyInfoInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.AssemblyInfo.cs
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.csproj.CopyComplete
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.pdb
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.csprojAssemblyReference.cache
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Repository\obj\Debug\netcoreapp2.2\Cargo.Repository.csproj.CopyComplete
