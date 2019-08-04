@@ -17,9 +17,9 @@ namespace Cargo.DomainModel.Models.ControleTabelaFrete
 
         public StatusSimulacaoTarifa.Status StatusSimulacaoTarifa { get; set; }
 
-        public int IdSimulacao { get; set; }
+        public int IdTarifa { get; set; }
 
-        [ForeignKey("IdSimulacao")]
+        [ForeignKey("IdTarifa")]
         public Tarifa Tarifa { get; set; }
 
         public SimulacaoTarifa RedefinirTarifa(SimulacaoTarifa simulacao) 
