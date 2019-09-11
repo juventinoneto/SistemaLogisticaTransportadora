@@ -9,17 +9,17 @@ import { JDialogueModule } from './j-dialogue/j-dialogue.module';
 @NgModule({
   imports: [
     CommonModule,
-    JInputModule,
-    JTextareaModule,
-    JDataTableModule,
-    JDialogueModule
+    // JInputModule,
+    // JTextareaModule,
+    // JDataTableModule,
+    // JDialogueModule
   ],
-  declarations: [JDialogueComponent],
+  // declarations: [JDialogueComponent],
   exports: [
-    JInputModule,
-    JTextareaModule,
-    JDataTableModule,
-    JDialogueModule
+    // JInputModule,
+    // JTextareaModule,
+    // JDataTableModule,
+    // JDialogueModule
   ]
 })
 export class ComponentsModule { }

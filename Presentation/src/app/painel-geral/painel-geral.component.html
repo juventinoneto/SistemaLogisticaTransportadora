@@ -1,0 +1,73 @@
+<div class="container">
+
+  <div class="row">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-lg-12">
+      <h2>Coletas</h2>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-lg-12">
+      <div style="text-align: right">
+        <button type="button" class="btn btn-primary">Registrar Coleta</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 5px">
+    <p-table [value]="coletas">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Código da Coleta</th>
+          <th>Cliente/Parceiro</th>
+          <th>Data da Coleta</th>
+          <th>Situação</th>
+          <th>Ações</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-coleta>
+        <tr>
+          <td><span>{{ coleta.idColeta }}</span></td>
+          <td><span>{{ coleta.idColeta }}</span></td>
+          <td><span>{{ coleta.dataColeta | date:'dd/MM/yyyy'}}</span></td>
+          <td><span>{{ coleta.status }}</span></td>
+          <td style="text-align: center">
+            <button style="padding: 5px">
+              <i class="fa fa-truck"></i>
+            </button>
+            <button style="padding: 5px; margin-left: 5px;" (click)="simularFrete()">
+              <i class="fa fa-calculator"></i>
+            </button>
+            <button style="padding: 5px; margin-left: 5px" (click)="definirCarga()">
+              <i class="fa fa-calendar"></i>
+            </button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+
+  </div>
+
+</div>
+
+<app-controle-tabela-frete #controleTabelaFrete></app-controle-tabela-frete>
+<app-controle-expedicao #controleExpedicao></app-controle-expedicao>

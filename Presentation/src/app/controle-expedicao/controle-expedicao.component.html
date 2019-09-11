@@ -1,3 +1,9 @@
-<p>
-  controle-expedicao works!
-</p>
+<p-dialog header="Controle de Expedição" [(visible)]="display" [modal]="true" [responsive]="true" [style]="{width: '800px', minWidth: '200px'}" [minY]="70" 
+        [maximizable]="false" [baseZIndex]="10000">
+        <p-fullCalendar [events]="events"></p-fullCalendar>
+        
+        <p-footer>
+            <button type="button" class="btn btn-primary">Salvar</button>
+            <button type="button" class="btn btn-danger">Cancelar</button>
+        </p-footer>
+</p-dialog>

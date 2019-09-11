@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControleTabelaFreteComponent implements OnInit {
 
+  display: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  open() {
+    this.display = true;
   }
 
 }

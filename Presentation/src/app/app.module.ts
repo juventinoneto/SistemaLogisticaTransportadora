@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { PainelGeralModule } from './painel-geral/painel-geral.module';
 import { ControleTabelaFreteModule } from './controle-tabela-frete/controle-tabela-frete.module';
-import { ControleColetaDefinicaoCargaModule } from './controle-coleta-definicao-carga/controle-coleta-definicao-carga.module';
-import { ControleExpedicaoModule } from './controle-expedicao/controle-expedicao.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +18,9 @@ import { ControleExpedicaoModule } from './controle-expedicao/controle-expedicao
     BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
-    ControleTabelaFreteModule,
-    ControleColetaDefinicaoCargaModule,
-    ControleExpedicaoModule
+    AngularFontAwesomeModule,
+    PainelGeralModule,
+    ControleTabelaFreteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
