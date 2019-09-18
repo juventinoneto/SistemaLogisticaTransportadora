@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+
+// import dayGridPlugin from '@fullcalendar/daygrid';
+// import timeGridPlugin from '@fullcalendar/timegrid';
+// import interactionPlugin from '@fullcalendar/interaction';
 
 @Component({
   selector: 'app-controle-expedicao',
@@ -7,6 +12,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControleExpedicaoComponent implements OnInit {
 
+  formGroup: FormGroup;
+
   display: boolean = false;
 
   events: any[];
@@ -14,34 +21,27 @@ export class ControleExpedicaoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.events = [
-      {
-        "title": "All Day Event",
-        "start": "2016-01-01"
-      },
-      {
-        "title": "Long Event",
-        "start": "2016-01-07",
-        "end": "2016-01-10"
-      },
-      {
-        "title": "Repeating Event",
-        "start": "2016-01-09T16:00:00"
-      },
-      {
-        "title": "Repeating Event",
-        "start": "2016-01-16T16:00:00"
-      },
-      {
-        "title": "Conference",
-        "start": "2016-01-11",
-        "end": "2016-01-13"
-      }
-    ];
+    this.buildForm();
   }
 
   open() {
     this.display = true;
+  }
+
+  buildForm() {
+    this.formGroup = new FormGroup({
+      nomeCliente: new FormControl({disable: true}),
+      tipoDocumentoCliente: new FormControl(''),
+      documentoCliente: new FormControl(''),
+      ruaCliente: new FormControl(''),
+      bairroCliente: new FormControl(''),
+      cidadeCliente: new FormControl(''),
+      numeroEnderecoCliente: new FormControl(''),
+      cepCliente: new FormControl(''),
+      complementoCliente: new FormControl(''),
+      ufCliente: new FormControl(''),
+      data: new FormControl('')
+    });
   }
 
 }

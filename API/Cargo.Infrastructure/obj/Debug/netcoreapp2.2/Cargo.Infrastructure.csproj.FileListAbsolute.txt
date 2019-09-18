@@ -8,7 +8,6 @@ C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastruct
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastructure\obj\Debug\netcoreapp2.2\Cargo.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastructure\obj\Debug\netcoreapp2.2\Cargo.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastructure\obj\Debug\netcoreapp2.2\Cargo.Infrastructure.AssemblyInfo.cs
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastructure\obj\Debug\netcoreapp2.2\Cargo.Infrastructure.csproj.CopyComplete
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastructure\obj\Debug\netcoreapp2.2\Cargo.Infrastructure.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastructure\obj\Debug\netcoreapp2.2\Cargo.Infrastructure.pdb
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastructure\obj\Debug\netcoreapp2.2\Cargo.Infrastructure.csprojAssemblyReference.cache
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.Infrastructure\obj\Debug\netcoreapp2.2\Cargo.Infrastructure.csprojResolveAssemblyReference.cache

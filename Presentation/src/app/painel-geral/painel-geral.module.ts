@@ -5,12 +5,11 @@ import { ControleColetaDefinicaoCargaModule } from '../controle-coleta-definicao
 import { ControleExpedicaoModule } from '../controle-expedicao/controle-expedicao.module';
 import { ControleTabelaFreteModule } from '../controle-tabela-frete/controle-tabela-frete.module';
 import { SharedModule } from '../shared/shared.module';
-import { AppModule } from '../app.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    // ControleColetaDefinicaoCargaModule,
+    ControleColetaDefinicaoCargaModule,
     ControleExpedicaoModule,
     ControleTabelaFreteModule,
     SharedModule,

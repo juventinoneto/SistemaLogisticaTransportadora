@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ColetaGrid } from '../models/coleta-grid.model';
 import { ControleTabelaFreteComponent } from '../controle-tabela-frete/controle-tabela-frete.component';
 import { ControleExpedicaoComponent } from '../controle-expedicao/controle-expedicao.component';
+import { ControleColetaDefinicaoCargaComponent } from '../controle-coleta-definicao-carga/controle-coleta-definicao-carga.component';
 
 @Component({
   selector: 'app-painel-geral',
@@ -10,8 +11,11 @@ import { ControleExpedicaoComponent } from '../controle-expedicao/controle-exped
 })
 export class PainelGeralComponent implements OnInit {
 
-  @ViewChild('controleTabelaFrete') controleTabelaFrete: ControleTabelaFreteComponent;
-  @ViewChild('controleExpedicao') controleExpedicao: ControleExpedicaoComponent;
+  @ViewChild('controleTabelaFrete', { static: true }) controleTabelaFrete: ControleTabelaFreteComponent;
+  @ViewChild('controleExpedicao', { static: true }) controleExpedicao: ControleExpedicaoComponent;
+  @ViewChild('controleColetaDefinicaoDeCarga', { static: true }) controleColetaDefinicaoDeCarga: ControleColetaDefinicaoCargaComponent;
+
+  
 
 
   coletas: ColetaGrid[] = [
@@ -34,6 +38,12 @@ export class PainelGeralComponent implements OnInit {
     console.log('Simular frete');
     //this.controleTabelaFrete.display = true;
     this.controleTabelaFrete.open();
+  }
+
+  cadastrarColeta() {
+    console.log('Cadastrar Coleta');
+    //this.controleTabelaFrete.display = true;
+    this.controleColetaDefinicaoDeCarga.open();
   }
 
 }

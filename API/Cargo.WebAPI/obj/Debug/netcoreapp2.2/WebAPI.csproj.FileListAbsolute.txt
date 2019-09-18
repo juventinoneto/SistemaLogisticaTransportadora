@@ -1,4 +1,3 @@
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cache
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cs
@@ -18,6 +17,6 @@ C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\bin\
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\bin\Debug\netcoreapp2.2\Cargo.DomainModel.pdb
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\bin\Debug\netcoreapp2.2\Cargo.Repository.pdb
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
-C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CopyComplete
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
+C:\Users\juven\Projetos\TCC\SistemaLogisticaTransportadora\API\Cargo.WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojResolveAssemblyReference.cache

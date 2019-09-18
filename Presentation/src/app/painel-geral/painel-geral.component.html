@@ -28,7 +28,8 @@
   <div class="row">
     <div class="col-md-12 col-sm-12 col-lg-12">
       <div style="text-align: right">
-        <button type="button" class="btn btn-primary">Registrar Coleta</button>
+        <button type="button" class="btn btn-primary" (click)="cadastrarColeta()">Registrar Coleta</button>
+        <button type="button" class="btn btn-primary" (click)="visualizarDespachos()" style="margin-left: 5px ">Visualizar Despachos</button>
       </div>
     </div>
   </div>
@@ -71,3 +72,4 @@
 
 <app-controle-tabela-frete #controleTabelaFrete></app-controle-tabela-frete>
 <app-controle-expedicao #controleExpedicao></app-controle-expedicao>
+<app-controle-coleta-definicao-carga #controleColetaDefinicaoDeCarga></app-controle-coleta-definicao-carga>
