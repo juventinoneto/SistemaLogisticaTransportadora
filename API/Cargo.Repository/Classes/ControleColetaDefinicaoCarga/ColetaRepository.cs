@@ -3,6 +3,7 @@ using System.Linq;
 using Cargo.DomainModel.Models.ControleColetaDefinicaoCarga;
 using Cargo.Infrastructure;
 using Cargo.Repository.Interfaces.ControleColetaDefinicaoCarga;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cargo.Repository.Classes.ControleColetaDefinicaoCarga
 {
@@ -13,6 +14,16 @@ namespace Cargo.Repository.Classes.ControleColetaDefinicaoCarga
         public ColetaRepository(CargoContexto context) : base(context)
         {
             _context = context;
+        }
+
+        public IQueryable<Coleta> GetAllColetas()
+        {
+            return _context
+                .Coleta
+                .Include(x => x.Cliente.Endereco)
+                .Include(x => x.Parceiro.Endereco)
+                .Include(x => x.Endereco)
+                .Include(x => x.Tarifas);
         }
 
         public IQueryable<Coleta> GetColetasDataAtual(DateTime data)

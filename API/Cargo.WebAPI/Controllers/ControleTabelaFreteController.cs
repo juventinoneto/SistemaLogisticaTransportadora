@@ -34,9 +34,8 @@ namespace WebAPI.Controllers
             _tarifaService = tarifaService;
         }
 
-        [HttpPut]
-        [Route("simulacao-tarifa")]
-        public ActionResult<ResultBase> Post([FromBody] RegistrarTarifaCommand request)
+        [HttpPost]
+        public ActionResult<ResultBase> PostDefinirTarifa([FromBody] RegistrarTarifaCommand request)
         {
             try
             {
@@ -52,40 +51,21 @@ namespace WebAPI.Controllers
             }
         }
 
-        [HttpPut]
-        [Route("simulacao-tarifa/{id}")]
-        public ActionResult<ResultBase> Put(int idTarifa, [FromBody] RegistrarSimulacaoTarifaCommand request)
-        {
-            try
-            {
-                var mapped = _mapper.Map<SimulacaoTarifa>(request);
-
-                var result = _tarifaService.RegistrarSimulacao(idTarifa, mapped);
-
-                return new ResultBase(true, result);
-            }
-            catch (System.Exception ex)
-            {
-                return new ResultBase(false, request, ex.Message);
-            }
-        }
-
-        //[HttpGet]
-        //[Route("{id}")]
-        //public ActionResult<ResultBase> Post([FromBody] SolicitarColetaCommand coleta)
+        //[HttpPut]
+        //public ActionResult<ResultBase> Put(int idTarifa, [FromBody] RegistrarSimulacaoTarifaCommand request)
         //{
         //    try
         //    {
-        //        var coletaMapped = _mapper.Map<Coleta>(coleta);
+        //        var mapped = _mapper.Map<SimulacaoTarifa>(request);
 
-        //        var result = _coletaService.RegistrarColeta(coletaMapped);
+        //        var result = _tarifaService.RegistrarSimulacao(idTarifa, mapped);
 
-        //        return new ResultBase(true, coleta);
+        //        return new ResultBase(true, result);
         //    }
         //    catch (System.Exception ex)
         //    {
-        //        return new ResultBase(false, coleta, ex.Message);
+        //        return new ResultBase(false, request, ex.Message);
         //    }
-        //}
+        //}        
     }
 }

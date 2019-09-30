@@ -8,10 +8,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PainelGeralModule } from './painel-geral/painel-geral.module';
 import { ControleTabelaFreteModule } from './controle-tabela-frete/controle-tabela-frete.module';
+import { VisualizarDespachoComponent } from './visualizar-despacho/visualizar-despacho.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

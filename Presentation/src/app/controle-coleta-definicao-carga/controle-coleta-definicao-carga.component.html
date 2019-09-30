@@ -15,10 +15,10 @@
       <div class="col-md-6 col-sm-6 col-lg-6">
         <div class="form-group">
           <label>
-            <input type="radio" name="tipoDocumentoCliente" value="1" formControlName="tipoDocumentoCliente">CPF
-            <input type="radio" name="tipoDocumentoCliente" value="2" formControlName="tipoDocumentoCliente"> CNPJ<br>
+            Número Documento:
           </label>
-          <input type="text" pInputText placeholder="Número Documento" class="form-control" formControlName="documentoCliente">
+          <input type="number" pInputText placeholder="Número Documento" class="form-control"
+            formControlName="documentoCliente">
         </div>
       </div>
     </div>
@@ -27,14 +27,14 @@
       <div class="col-md-6 col-sm-6 col-lg-6">
         <div class="form-group">
           <label>Rua:</label>
-          <input type="text" pInputText placeholder="Username" class="form-control" formControlName="ruaCliente" >
+          <input type="text" pInputText placeholder="Rua" class="form-control" formControlName="ruaCliente">
         </div>
       </div>
       <div class="col-md-4 col-sm-4 col-lg-4">
         <div class="form-group">
           <label>
             <label>Bairo:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="bairroCliente" >
+            <input type="text" pInputText placeholder="Bairro" class="form-control" formControlName="bairroCliente">
           </label>
         </div>
       </div>
@@ -42,7 +42,8 @@
         <div class="form-group">
           <label>
             <label>Número:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="numeroEnderecoCliente" >
+            <input type="number" pInputText placeholder="Nº" class="form-control"
+              formControlName="numeroEnderecoCliente">
           </label>
         </div>
       </div>
@@ -52,14 +53,14 @@
       <div class="col-md-4 col-sm-4 col-lg-4">
         <div class="form-group">
           <label>Cidade:</label>
-          <input type="text" pInputText placeholder="Username" class="form-control" formControlName="cidadeCliente" >
+          <input type="text" pInputText placeholder="Cidade" class="form-control" formControlName="cidadeCliente">
         </div>
       </div>
       <div class="col-md-3 col-sm-3 col-lg-3">
         <div class="form-group">
           <label>
             <label>CEP:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="cepCliente" >
+            <p-inputMask mask="99999-999" formControlName="cepCliente"></p-inputMask>
           </label>
         </div>
       </div>
@@ -67,16 +68,18 @@
         <div class="form-group">
           <label>
             <label>Complemento:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="complementoCliente" >
+            <input type="text" pInputText placeholder="Complemento" class="form-control"
+              formControlName="complementoCliente">
           </label>
         </div>
       </div>
       <div class="col-md-2 col-sm-2 col-lg-2">
         <div class="form-group">
-          <label>
-            <label>UF:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="ufCliente" >
-          </label>
+          <label>UF:</label>
+          <select formControlName="ufCliente" class="form-control">
+            <option value="">-</option>
+            <option *ngFor="let uf of ufs" value="{{ uf.value }}"><span>{{ uf.label }}</span></option>
+          </select>
         </div>
       </div>
     </div>
@@ -88,7 +91,7 @@
       <div class="col-md-6 col-sm-6 col-lg-6">
         <div class="form-group">
           <label>Nome:</label>
-          <input type="text" pInputText placeholder="Username" class="form-control" formControlName="nomeDestinatario" >
+          <input type="text" pInputText placeholder="Nome" class="form-control" formControlName="nomeDestinatario">
         </div>
       </div>
     </div>
@@ -97,20 +100,21 @@
       <div class="col-md-4 col-sm-4 col-lg-4">
         <div class="form-group">
           <label>Cidade:</label>
-          <input type="text" pInputText placeholder="Username" class="form-control" formControlName="cidadeDestinatario" >
+          <input type="text" pInputText placeholder="Cidade" class="form-control" formControlName="cidadeDestinatario">
         </div>
       </div>
       <div class="col-md-6 col-sm-6 col-lg-6">
         <div class="form-group">
           <label>Rua:</label>
-          <input type="text" pInputText placeholder="Username" class="form-control" formControlName="ruaDestinatario" >
+          <input type="text" pInputText placeholder="Rua" class="form-control" formControlName="ruaDestinatario">
         </div>
       </div>
       <div class="col-md-4 col-sm-4 col-lg-4">
         <div class="form-group">
           <label>
             <label>Bairo:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="bairroDestinatario" >
+            <input type="text" pInputText placeholder="Bairro" class="form-control"
+              formControlName="bairroDestinatario">
           </label>
         </div>
       </div>
@@ -118,7 +122,7 @@
         <div class="form-group">
           <label>
             <label>Número:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="numeroEnderecoDestinatario" >
+            <input type="number" pInputText class="form-control" formControlName="numeroEnderecoDestinatario">
           </label>
         </div>
       </div>
@@ -129,7 +133,7 @@
         <div class="form-group">
           <label>
             <label>CEP:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="cepDestinatario" >
+            <p-inputMask mask="99999-999" formControlName="cepDestinatario"></p-inputMask>
           </label>
         </div>
       </div>
@@ -137,7 +141,8 @@
         <div class="form-group">
           <label>
             <label>Complemento:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="complementoDestinatario" >
+            <input type="text" pInputText placeholder="Complemento" class="form-control"
+              formControlName="complementoDestinatario">
           </label>
         </div>
       </div>
@@ -145,7 +150,10 @@
         <div class="form-group">
           <label>
             <label>UF:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="ufDestinatario" >
+            <select formControlName="ufDestinatario" class="form-control">
+              <option value="">-</option>
+              <option *ngFor="let uf of ufs" value="{{ uf.value }}"><span>{{ uf.label }}</span></option>
+            </select>
           </label>
         </div>
       </div>
@@ -158,19 +166,14 @@
         <div class="ui-g-12 ui-md-4">
           <label>
             <label>Data da Coleta:</label>
-            <p-calendar dateFormat="dd/mm/yy" [showIcon]="true"  formControlName="dataColeta"></p-calendar>
+            <p-calendar dateFormat="dd/mm/yy" [showIcon]="true" formControlName="dataColeta"></p-calendar>
           </label>
         </div>
       </div>
     </div>
 
-    <pre>
-      {{ formGroup.value | json }}
-    </pre>
-
-
     <p-footer>
-      <button type="button" class="btn btn-primary">Salvar</button>
+      <button type="button" class="btn btn-primary" (click)="salvar()">Salvar</button>
       <button type="button" class="btn btn-danger">Cancelar</button>
     </p-footer>
   </form>

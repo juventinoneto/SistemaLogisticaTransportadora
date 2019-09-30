@@ -1,5 +1,6 @@
 ﻿using Cargo.ApplicationService.DTO.Commons;
 using Cargo.ApplicationService.DTO.ControleColetaDefinicaoCarga;
+using Cargo.ApplicationService.DTO.ControleTabelaFrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -23,5 +24,9 @@ namespace Cargo.ApplicationService.DTO.ControleExpedicao
         public int IdEndereco { get; set; }
 
         public EnderecoData Endereco { get; set; }
+
+        public List<TarifaData> Tarifas { get; set; }
+
+        public string NomeDestinatario { get; set; }
     }
 }

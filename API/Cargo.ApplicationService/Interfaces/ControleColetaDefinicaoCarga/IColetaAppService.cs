@@ -1,3 +1,4 @@
+using Cargo.ApplicationService.DTO.ControleExpedicao;
 using Cargo.DomainModel.Models.ControleColetaDefinicaoCarga;
 using System;
 using System.Collections.Generic;
@@ -9,5 +10,9 @@ namespace Cargo.ApplicationService.Interfaces.ControleColetaDefinicaoCarga
         Coleta RegistrarColeta(Coleta coleta);
 
         IEnumerable<Coleta> GetColetasDataAtual(DateTime data);
+
+        IEnumerable<Coleta> GetAllColetas();
+
+        IEnumerable<ExpedicaoCalendarData> ListarColetasExpedicoes();
     }
 }

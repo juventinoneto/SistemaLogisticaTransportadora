@@ -23,5 +23,14 @@ namespace Cargo.DomainModel.Models.ControleExpedicao
         {
             this.Coletas = new List<Coleta>();
         }
+
+        public static Expedicao Criar(Coleta coleta, DateTime data)
+        {
+            var expedicao = new Expedicao();
+            expedicao.Data = data;
+            expedicao.Status = StatusExpedicao.Status.T;
+
+            return expedicao;
+        }
     }
 }

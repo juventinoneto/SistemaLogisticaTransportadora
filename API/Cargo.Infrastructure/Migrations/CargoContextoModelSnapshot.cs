@@ -92,7 +92,10 @@ namespace Cargo.Infrastructure.Migrations
 
                     b.Property<int>("IdEndereco");
 
-                    b.Property<int>("IdParceiro");
+                    b.Property<int?>("IdParceiro");
+
+                    b.Property<string>("NomeDestinatario")
+                        .HasMaxLength(100);
 
                     b.HasKey("IdColeta");
 
@@ -182,7 +185,8 @@ namespace Cargo.Infrastructure.Migrations
                     b.Property<string>("StatusSimulacaoTarifa")
                         .IsRequired();
 
-                    b.Property<decimal>("Valor");
+                    b.Property<decimal>("Valor")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("IdSimulacaoTarifa");
 
@@ -232,8 +236,7 @@ namespace Cargo.Infrastructure.Migrations
 
                     b.HasOne("Cargo.DomainModel.Models.ControleColetaDefinicaoCarga.Parceiro", "Parceiro")
                         .WithMany()
-                        .HasForeignKey("IdParceiro")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("IdParceiro");
                 });
 
             modelBuilder.Entity("Cargo.DomainModel.Models.ControleColetaDefinicaoCarga.Parceiro", b =>

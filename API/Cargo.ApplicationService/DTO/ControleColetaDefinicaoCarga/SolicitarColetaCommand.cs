@@ -11,5 +11,6 @@ namespace Cargo.ApplicationService.DTO.ControleColetaDefinicaoCarga
         public SolicitarColetaParceiroCommand Parceiro { get; set; }
         public DateTime Data { get; set; }
         public EnderecoData Endereco { get; set; }
+        public string NomeDestinatario { get; set; }
     }
 }

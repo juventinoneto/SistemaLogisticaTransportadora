@@ -5,6 +5,12 @@ import { ControleColetaDefinicaoCargaModule } from '../controle-coleta-definicao
 import { ControleExpedicaoModule } from '../controle-expedicao/controle-expedicao.module';
 import { ControleTabelaFreteModule } from '../controle-tabela-frete/controle-tabela-frete.module';
 import { SharedModule } from '../shared/shared.module';
+import { HttpClientModule }    from '@angular/common/http';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
+import { VisualizarDespachoModule } from '../visualizar-despacho/visualizar-despacho.module';
+
+
 
 @NgModule({
   imports: [
@@ -12,7 +18,11 @@ import { SharedModule } from '../shared/shared.module';
     ControleColetaDefinicaoCargaModule,
     ControleExpedicaoModule,
     ControleTabelaFreteModule,
+    VisualizarDespachoModule,
     SharedModule,
+    HttpClientModule,
+    MessageModule,
+    MessagesModule
   ],
   declarations: [
     PainelGeralComponent

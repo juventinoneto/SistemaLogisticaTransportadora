@@ -19,7 +19,7 @@ namespace Cargo.Repository.Classes
         public TEntity Create(TEntity entity)
         {
              _context.Set<TEntity>().Add(entity);
-             _context.SaveChangesAsync();
+             _context.SaveChanges();
              return entity;
         }
 

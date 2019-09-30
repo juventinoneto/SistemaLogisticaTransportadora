@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Cargo.ApplicationService.DTO.Commons;
+using Cargo.ApplicationService.DTO.ControleExpedicao;
 using Cargo.ApplicationService.Interfaces.ControleColetaDefinicaoCarga;
 using Cargo.ApplicationService.Interfaces.ControleExpedicao;
 using Cargo.DomainModel.Models.ControleColetaDefinicaoCarga;
@@ -23,9 +24,12 @@ namespace Cargo.ApplicationService.Classe.ControleExpedicao
             _coletaAppService = coletaAppService;
         }
 
-        public ResultBase DefinirExpedicao(IEnumerable<int> idsColetas, DateTime data)
+        public Expedicao DefinirExpedicao(RegistrarExpedicaoCommand request, Coleta coleta)
         {
-            throw new NotImplementedException();
+            var expedicao = Expedicao.Criar(coleta, request.Data);
+            var retorno = base.Create(expedicao);
+
+            return retorno;
         }
 
         public IEnumerable<Coleta> GetExpedicoesDiarias()

@@ -2,9 +2,9 @@ import { Endereco } from "./endereco.model";
 
 export class Cliente {
     public constructor(
-        idCliente?: number,
-        nome?: string,
-        documento?: string,
-        endereco?: Endereco
+        public idCliente?: number,
+        public nome?: string,
+        public documento?: string,
+        public endereco?: Endereco
     ) {}
 }

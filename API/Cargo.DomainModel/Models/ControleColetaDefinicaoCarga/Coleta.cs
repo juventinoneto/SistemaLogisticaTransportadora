@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Cargo.DomainModel.Models.Commons;
+using Cargo.DomainModel.Models.ControleTabelaFrete;
 
 namespace Cargo.DomainModel.Models.ControleColetaDefinicaoCarga
 {
@@ -16,7 +18,7 @@ namespace Cargo.DomainModel.Models.ControleColetaDefinicaoCarga
         [ForeignKey("IdCliente")]
         public Cliente Cliente { get; set; }
 
-        public int IdParceiro { get; set; }
+        public int? IdParceiro { get; set; }
 
         [ForeignKey("IdParceiro")]
         public Parceiro Parceiro { get; set; }
@@ -27,6 +29,15 @@ namespace Cargo.DomainModel.Models.ControleColetaDefinicaoCarga
 
         [ForeignKey("IdEndereco")]
         public Endereco Endereco { get; set; }
+
+        public string NomeDestinatario { get; set; }
+
+        public List<Tarifa> Tarifas { get; set; }
+
+        public Coleta()
+        {
+            this.Tarifas = new List<Tarifa>();
+        }
 
 
     }

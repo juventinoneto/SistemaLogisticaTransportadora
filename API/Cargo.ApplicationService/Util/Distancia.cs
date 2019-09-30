@@ -62,7 +62,7 @@ namespace Cargo.ApplicationService.Util
                 { SE, MontaListaRegiao(5) },
                 { AL, MontaListaRegiao(5) },
                 { PE, MontaListaRegiao(5) },
-                { PA, MontaListaRegiao(5) },
+                { PB, MontaListaRegiao(5) },
                 { RN, MontaListaRegiao(5) },
                 { CE, MontaListaRegiao(5) },
             };

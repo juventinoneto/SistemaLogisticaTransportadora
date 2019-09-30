@@ -3,6 +3,7 @@ using Cargo.DomainModel.Models.ControleExpedicao;
 using System.Collections.Generic;
 using Cargo.ApplicationService.DTO.Commons;
 using System;
+using Cargo.ApplicationService.DTO.ControleExpedicao;
 
 namespace Cargo.ApplicationService.Interfaces.ControleExpedicao
 {
@@ -10,6 +11,6 @@ namespace Cargo.ApplicationService.Interfaces.ControleExpedicao
     {
         IEnumerable<Coleta> GetExpedicoesDiarias();
 
-        ResultBase DefinirExpedicao(IEnumerable<int> idsColetas, DateTime data);
+        Expedicao DefinirExpedicao(RegistrarExpedicaoCommand request, Coleta coleta);
     }
 }

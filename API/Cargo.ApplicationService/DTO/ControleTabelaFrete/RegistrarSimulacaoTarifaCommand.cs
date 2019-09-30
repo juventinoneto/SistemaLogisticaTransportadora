@@ -7,12 +7,12 @@ namespace Cargo.ApplicationService.DTO.ControleTabelaFrete
 {
     public class RegistrarSimulacaoTarifaCommand
     {
-        public int IdSimulacaoTarifa { get; set; }
+        public int? IdSimulacaoTarifa { get; set; }
         public DateTime Data { get; set; }
-        public double Valor { get; set; }
+        public decimal Valor { get; set; }
 
-        public StatusSimulacaoTarifa Status { get; set; }
+        // public StatusSimulacaoTarifa Status { get; set; }
 
-        public int IdTarifa { get; set; }
+        public int? IdTarifa { get; set; }
     }
 }

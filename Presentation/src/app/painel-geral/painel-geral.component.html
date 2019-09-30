@@ -3,7 +3,7 @@
   <div class="row">
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link active" href="#">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -12,9 +12,15 @@
         <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
       </li>
     </ul>
+  </div>
+
+  <div class="row" *ngIf="msgs?.length > 0">
+    <div class="col-md-12 col-sm-12 col-lg-12">
+      <p-messages [(value)]="msgs"></p-messages>
+    </div>
   </div>
 
   <div class="row">
@@ -29,13 +35,14 @@
     <div class="col-md-12 col-sm-12 col-lg-12">
       <div style="text-align: right">
         <button type="button" class="btn btn-primary" (click)="cadastrarColeta()">Registrar Coleta</button>
-        <button type="button" class="btn btn-primary" (click)="visualizarDespachos()" style="margin-left: 5px ">Visualizar Despachos</button>
+        <button type="button" class="btn btn-primary" (click)="visualizarDespachos()"
+          style="margin-left: 5px ">Visualizar Despachos</button>
       </div>
     </div>
   </div>
 
   <div style="margin-top: 5px">
-    <p-table [value]="coletas">
+    <p-table [value]="coletas" [paginator]="true" [rows]="10">
       <ng-template pTemplate="header">
         <tr>
           <th>Código da Coleta</th>
@@ -48,17 +55,19 @@
       <ng-template pTemplate="body" let-coleta>
         <tr>
           <td><span>{{ coleta.idColeta }}</span></td>
-          <td><span>{{ coleta.idColeta }}</span></td>
-          <td><span>{{ coleta.dataColeta | date:'dd/MM/yyyy'}}</span></td>
-          <td><span>{{ coleta.status }}</span></td>
+          <td><span>{{ coleta?.cliente?.nome }}</span></td>
+          <td><span>{{ coleta.data | date:'dd/MM/yyyy'}}</span></td>
+          <td><span>{{ definirStatus(coleta) }}</span></td>
           <td style="text-align: center">
-            <button style="padding: 5px">
-              <i class="fa fa-truck"></i>
-            </button>
-            <button style="padding: 5px; margin-left: 5px;" (click)="simularFrete()">
+            <button style="padding: 5px; margin-left: 5px;" (click)="simularFrete(coleta)">
               <i class="fa fa-calculator"></i>
             </button>
-            <button style="padding: 5px; margin-left: 5px" (click)="definirCarga()">
+            <button style="padding: 5px; margin-left: 5px" (click)="definirCarga(coleta)"
+              *ngIf="!desabilitarAcaoDespacho(coleta)" disabled>
+              <i class="fa fa-calendar"></i>
+            </button>
+            <button style="padding: 5px; margin-left: 5px" (click)="definirCarga(coleta)"
+              *ngIf="desabilitarAcaoDespacho(coleta)">
               <i class="fa fa-calendar"></i>
             </button>
           </td>
@@ -70,6 +79,7 @@
 
 </div>
 
-<app-controle-tabela-frete #controleTabelaFrete></app-controle-tabela-frete>
-<app-controle-expedicao #controleExpedicao></app-controle-expedicao>
-<app-controle-coleta-definicao-carga #controleColetaDefinicaoDeCarga></app-controle-coleta-definicao-carga>
+<app-controle-tabela-frete #controleTabelaFrete (newItemEvent)="atualizarGrid()" [msgs]="msgs"></app-controle-tabela-frete>
+<app-controle-expedicao #controleExpedicao (newItemEvent)="atualizarGrid()" [msgs]="msgs"></app-controle-expedicao>
+<app-controle-coleta-definicao-carga #controleColetaDefinicaoDeCarga (newItemEvent)="atualizarGrid()" [msgs]="msgs">
+</app-controle-coleta-definicao-carga>

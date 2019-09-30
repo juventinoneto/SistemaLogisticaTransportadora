@@ -8,6 +8,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputMaskModule } from 'primeng/inputmask';
 import { CalendarModule } from 'primeng/calendar';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
+import { DropdownModule } from 'primeng/dropdown';
 
 
 
@@ -20,7 +22,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     RadioButtonModule,
     InputMaskModule,
     CalendarModule,
-    ReactiveFormsModule
+    DropdownModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   declarations: [
     ControleColetaDefinicaoCargaComponent

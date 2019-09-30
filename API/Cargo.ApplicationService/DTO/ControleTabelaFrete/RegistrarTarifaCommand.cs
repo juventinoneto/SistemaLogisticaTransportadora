@@ -6,7 +6,7 @@ namespace Cargo.ApplicationService.DTO.ControleTabelaFrete
 {
     public class RegistrarTarifaCommand
     {
-        public int IdTarifa { get; set; }
+        public int? IdTarifa { get; set; }
         public int IdColeta { get; set; }
         public List<RegistrarSimulacaoTarifaCommand> Simulacoes { get; set; }
     }

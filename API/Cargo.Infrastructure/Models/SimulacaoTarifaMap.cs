@@ -12,7 +12,7 @@ namespace Cargo.Infrastructure.Models
         {
             builder.HasOne(p => p.Tarifa);
             builder.Property(p => p.Data).IsRequired();
-            builder.Property(p => p.Valor).IsRequired();
+            builder.Property(p => p.Valor).HasColumnType("decimal(18,2)").IsRequired();
             builder.Property(p => p.StatusSimulacaoTarifa).IsRequired();
             builder.Property(p => p.StatusSimulacaoTarifa)
                 .HasConversion(

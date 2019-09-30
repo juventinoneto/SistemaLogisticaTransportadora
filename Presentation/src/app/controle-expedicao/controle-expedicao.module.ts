@@ -7,6 +7,10 @@ import { FullCalendarModule } from 'primeng/fullcalendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { AccordionModule } from 'primeng/accordion';
 import { CalendarModule } from 'primeng/calendar';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 
 @NgModule({
   imports: [
@@ -16,7 +20,11 @@ import { CalendarModule } from 'primeng/calendar';
     FullCalendarModule,
     DropdownModule,
     AccordionModule,
-    CalendarModule
+    CalendarModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MessageModule,
+    MessagesModule
   ],
   declarations: [
     ControleExpedicaoComponent

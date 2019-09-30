@@ -1,5 +1,6 @@
 using AutoMapper;
 using Cargo.ApplicationService.DTO.Commons;
+using Cargo.ApplicationService.DTO.ControleColetaDefinicaoCarga;
 using Cargo.ApplicationService.DTO.ControleExpedicao;
 using Cargo.ApplicationService.Interfaces.ControleColetaDefinicaoCarga;
 using Cargo.ApplicationService.Interfaces.ControleExpedicao;
@@ -35,35 +36,16 @@ namespace Cargo.WebAPI.Controllers
             _expedicaoService = expedicaoService;
         }
 
-        [HttpGet]
-        public IActionResult Get()
-        {
-            return null;
-
-        }
-
-        [HttpGet]
-        [Route("marcacao-coleta-data-atual")]
-        public ActionResult<List<ColetaData>> GetColetasDataAtual()
-        {
-            var retorno = _expedicaoService.GetExpedicoesDiarias().ToList();
-
-            return _mapper.Map<List<Coleta>, List<ColetaData>>(retorno);
-
-        }
-
         [HttpPost]
-        [Route("agendamento-expedicao")]
-        public ActionResult<ResultBase> PostAgendamentoExpedicao([FromBody] IEnumerable<RegistrarExpedicaoCommand> request)
+        public ActionResult<ResultBase> PostAgendamentoExpedicao([FromBody] RegistrarExpedicaoCommand request)
         {
             try
             {
-                // alterar, pois não está correto
-                var mapped = _mapper.Map<List<RegistrarExpedicaoCommand>, List<Expedicao>>(request.ToList());
+                var coleta = _mapper.Map<Coleta>(request.coleta);
 
-                ResultBase result = null;
+                var expedicao = _expedicaoService.DefinirExpedicao(request, coleta);
 
-                return new ResultBase(true, result);
+                return new ResultBase(true, _mapper.Map<Expedicao>(expedicao));
             }
             catch (System.Exception ex)
             {

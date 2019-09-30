@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using Cargo.ApplicationService.DTO.ControleColetaDefinicaoCarga;
 using Cargo.DomainModel.Models.ControleColetaDefinicaoCarga;
+using Cargo.ApplicationService.DTO.ControleExpedicao;
+using Microsoft.AspNetCore.Cors;
 
 namespace WebAPI.Controllers
 {
@@ -43,8 +45,10 @@ namespace WebAPI.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var result = _clienteService.GetAll().ToList();
-            return Ok(_mapper.Map<List<Cliente>, List<ClienteData>>(result));
+            //var result = _clienteService.GetAll().ToList();
+            //return Ok(_mapper.Map<List<Cliente>, List<ClienteData>>(result));
+            var result = _coletaService.GetAllColetas().ToList();
+            return Ok(_mapper.Map<List<Coleta>, List<ColetaData>>(result));
 
         }
  
@@ -56,7 +60,8 @@ namespace WebAPI.Controllers
         }
 
         // POST api/values
-        [HttpPost("api/[controller]/solicita-coleta")]
+        //[HttpPost("api/[controller]/solicita-coleta")]
+        [HttpPost]
         public void Post([FromBody] SolicitarColetaCommand coleta)
         {
             Console.Write(coleta);

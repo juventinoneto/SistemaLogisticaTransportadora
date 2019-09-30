@@ -21,6 +21,11 @@ using Cargo.ApplicationService.Classe.ControleExpedicao;
 using Cargo.ApplicationService.Interfaces.ControleExpedicao;
 using Cargo.Repository.Classes.ControleExpedicao;
 using Cargo.Repository.Interfaces.ControleExpedicao;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
+using Cargo.ApplicationService.Classe.ControleTabelaFrete;
+using Cargo.ApplicationService.Interfaces.ControleTabelaFrete;
+using Cargo.Repository.Classes.ControleTabelaFrete;
+using Cargo.Repository.Interfaces.ControleTabelaFrete;
 
 namespace WebAPI
 {
@@ -38,8 +43,7 @@ namespace WebAPI
         {
             services.AddDbContext<CargoContexto>(options => 
                 options.UseSqlServer(Configuration["Data:CargoDB:ConnectionString"]));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
+            
             services.AddSwaggerGen(swagger =>
 	        {
 		        swagger.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "Cargo API" });
@@ -54,6 +58,13 @@ namespace WebAPI
             services.AddScoped<IParceiroRepository, ParceiroRepository>();
             services.AddScoped<IExpedicaoAppService, ExpedicaoAppService>();
             services.AddScoped<IExpedicaoRepository, ExpedicaoRepository>();
+            services.AddScoped<ITarifaAppService, TarifaAppService>();
+            services.AddScoped<ITarifaRepository, TarifaRepository>();
+            services.AddScoped<ISimulacaoTarifaAppService, SimulacaoTarifaAppService>();
+            services.AddScoped<ISimulacaoTarifaRepository, SimulacaoTarifaRepository>();
+
+            services.AddCors();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,7 +79,10 @@ namespace WebAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:4200")
+                .AllowAnyMethod()
+                .AllowAnyHeader());
             app.UseSwagger();
 	        app.UseSwaggerUI(c =>
 	        {

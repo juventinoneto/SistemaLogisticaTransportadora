@@ -1,116 +1,118 @@
 <p-dialog header="Controle de Expedição" [(visible)]="display" [modal]="true" [responsive]="true"
   [style]="{width: '800px', minWidth: '200px'}" [minY]="70" [maximizable]="false" [baseZIndex]="10000">
 
-  <p-accordion>
-    <p-accordionTab header="Endereço Para Entrega" [selected]="true">
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-lg-6">
-          <div class="form-group">
-            <label>Nome:</label>
-            <input type="text" pInputText placeholder="Nome" class="form-control" formControlName="nomeCliente">
+  <form [formGroup]="formGroup">
+    <p-accordion>
+      <p-accordionTab header="Endereço Para Entrega" [selected]="true">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="form-group">
+              <label>Nome:</label>
+              <input type="text" disabled placeholder="Nome" class="form-control" formControlName="nomeCliente">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="form-group">
+              <label>
+                <span>Número Documento:</span>
+              </label>
+              <input type="text" disabled placeholder="Número Documento" class="form-control"
+                formControlName="documentoCliente">
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-lg-6">
-          <div class="form-group">
-            <label>
-              <input type="radio" name="tipoDocumentoCliente" value="1" formControlName="tipoDocumentoCliente">CPF
-              <input type="radio" name="tipoDocumentoCliente" value="2" formControlName="tipoDocumentoCliente"> CNPJ<br>
-            </label>
-            <input type="text" pInputText placeholder="Número Documento" class="form-control"
-              formControlName="documentoCliente">
+
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="form-group">
+              <label>Rua:</label>
+              <input type="text" disabled placeholder="Username" class="form-control" formControlName="ruaCliente">
+            </div>
           </div>
+          <div class="col-md-4 col-sm-4 col-lg-4">
+            <div class="form-group">
+              <label>
+                <label>Bairo:</label>
+                <input type="text" disabled placeholder="Username" class="form-control" formControlName="bairroCliente">
+              </label>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2 col-lg-2">
+            <div class="form-group">
+              <label>
+                <label>Número:</label>
+                <input type="text" disabled placeholder="Username" class="form-control"
+                  formControlName="numeroEnderecoCliente">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-lg-4">
+            <div class="form-group">
+              <label>Cidade:</label>
+              <input type="text" disabled placeholder="Username" class="form-control" formControlName="cidadeCliente">
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-lg-3">
+            <div class="form-group">
+              <label>
+                <label>CEP:</label>
+                <input type="text" disabled placeholder="Username" class="form-control" formControlName="cepCliente">
+              </label>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-lg-3">
+            <div class="form-group">
+              <label>
+                <label>Complemento:</label>
+                <input type="text" disabled placeholder="Username" class="form-control"
+                  formControlName="complementoCliente">
+              </label>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2 col-lg-2">
+            <div class="form-group">
+              <label>
+                <label>UF:</label>
+                <input type="text" disabled placeholder="Username" class="form-control" formControlName="ufCliente">
+              </label>
+            </div>
+          </div>
+        </div>
+      </p-accordionTab>
+    </p-accordion>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <div class="ui-g-12 ui-md-4">
+          <label>
+            <label>Data do Transporte:</label>
+            <p-calendar dateFormat="dd/mm/yy" [showIcon]="true" formControlName="data"></p-calendar>
+          </label>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-lg-6">
-          <div class="form-group">
-            <label>Rua:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="ruaCliente">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-lg-4">
-          <div class="form-group">
-            <label>
-              <label>Bairo:</label>
-              <input type="text" pInputText placeholder="Username" class="form-control" formControlName="bairroCliente">
-            </label>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-2 col-lg-2">
-          <div class="form-group">
-            <label>
-              <label>Número:</label>
-              <input type="text" pInputText placeholder="Username" class="form-control"
-                formControlName="numeroEnderecoCliente">
-            </label>
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <div class="row">
-        <div class="col-md-4 col-sm-4 col-lg-4">
-          <div class="form-group">
-            <label>Cidade:</label>
-            <input type="text" pInputText placeholder="Username" class="form-control" formControlName="cidadeCliente">
-          </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-lg-4">
+        <div class="ui-g-12 ui-md-4">
+          <label>
+            <label>Despacho:</label>
+            <p-dropdown [disabled]="true"></p-dropdown>
+          </label>
         </div>
-        <div class="col-md-3 col-sm-3 col-lg-3">
-          <div class="form-group">
-            <label>
-              <label>CEP:</label>
-              <input type="text" pInputText placeholder="Username" class="form-control" formControlName="cepCliente">
-            </label>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 col-lg-3">
-          <div class="form-group">
-            <label>
-              <label>Complemento:</label>
-              <input type="text" pInputText placeholder="Username" class="form-control"
-                formControlName="complementoCliente">
-            </label>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-2 col-lg-2">
-          <div class="form-group">
-            <label>
-              <label>UF:</label>
-              <input type="text" pInputText placeholder="Username" class="form-control" formControlName="ufCliente">
-            </label>
-          </div>
-        </div>
-      </div>
-    </p-accordionTab>
-  </p-accordion>
-
-  <hr />
-
-  <div class="row">
-    <div class="col-md-12 col-sm-12 col-lg-12">
-      <div class="ui-g-12 ui-md-4">
-        <label>
-          <label>Data do Transporte:</label>
-          <p-calendar dateFormat="dd/mm/yy" [showIcon]="true" formControlName="data"></p-calendar>
-        </label>
       </div>
     </div>
 
-  </div>
+    <p-footer>
+      <button type="button" class="btn btn-primary" (click)="salvar()">Salvar</button>
+      <button type="button" class="btn btn-danger">Cancelar</button>
+    </p-footer>
+  </form>
 
-  <div class="row">
-    <div class="col-md-4 col-sm-4 col-lg-4">
-      <div class="ui-g-12 ui-md-4">
-        <label>
-          <label>Despacho:</label>
-          <p-dropdown></p-dropdown>
-        </label>
-      </div>
-    </div>
-  </div>
-
-  <p-footer>
-    <button type="button" class="btn btn-primary">Salvar</button>
-    <button type="button" class="btn btn-danger">Cancelar</button>
-  </p-footer>
 </p-dialog>
