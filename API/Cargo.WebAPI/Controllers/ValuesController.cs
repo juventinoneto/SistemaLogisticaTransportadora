@@ -79,25 +79,25 @@ namespace WebAPI.Controllers
         {
         }
 
-        [HttpPost]
-        [Route("")]
-        public void PostSolicitarColeta([FromBody] SolicitarColetaCommand coleta)
-        {
-            try
-            {
-                //var coletaMapped = _mapper.Map<Coleta>(coleta);
+        //[HttpPost]
+        //[Route("")]
+        //public void PostSolicitarColeta([FromBody] SolicitarColetaCommand coleta)
+        //{
+        //    try
+        //    {
+        //        //var coletaMapped = _mapper.Map<Coleta>(coleta);
 
-                //var result = _coletaService.RegistrarColeta(coletaMapped);
+        //        //var result = _coletaService.RegistrarColeta(coletaMapped);
 
-                //return new ResultBase(true, result);
+        //        //return new ResultBase(true, result);
 
-                //return new ResultBase(false, null);
-                Console.Write(coleta);
-            }
-            catch (System.Exception)
-            {
-                //return new ResultBase(false, coleta);
-            }
-        }
+        //        //return new ResultBase(false, null);
+        //        Console.Write(coleta);
+        //    }
+        //    catch (System.Exception)
+        //    {
+        //        //return new ResultBase(false, coleta);
+        //    }
+        //}
     }
 }
